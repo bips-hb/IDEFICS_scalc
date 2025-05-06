@@ -12,10 +12,8 @@ You can install the development version of `IDEFICS.scalc` from GitHub using:
 install.packages("devtools")
 
 # Install directly from GitHub
-devtools::install_github("yourusername/IDEFICS.scalc")
+devtools::install_github("bips-hb/IDEFICS.scalc")
 ```
-
-*(Replace `"yourusername"` with your GitHub username.)*
 
 ## 🚀 Example
 
