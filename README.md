@@ -49,4 +49,12 @@ print(results)
 
 ## 📖 Reference
 
-This package uses internal parameter tables based on the **IDEFICS study**, a European cohort focused on childhood obesity and metabolic health.
+This package uses internal parameter tables based on the **IDEFICS study**, a European cohort focused on childhood obesity and metabolic health:
+
+-  Ahrens, W., Moreno, L. A., Mårild, S., Molnár, D., Siani, A., De Henauw, S., Böhmann, J., Günther, K., Hadjigeorgiou, C., Iacoviello, L., Lissner, L., Veidebaum, T., Pohlabeln, H. & Pigeot, I. on behalf of the IDEFICS consortium (2014). [Reference percentiles for anthropometric and blood pressure measurements in European children from the IDEFICS study](https://doi.org/10.1038/ijo.2014.130). *International Journal of Obesity*, 38(S2), S39–S47.
+
+The reference data used in this package was originally published in:
+- [bips-hb/IDEFICS-Score_Calculator](https://github.com/bips-hb/IDEFICS-Score_Calculator/) — a repository containing the IDEFICS tables and an R script version of the scoring logic.
+
+This package improves upon and packages that logic cleanly for programmatic and research use.
+
