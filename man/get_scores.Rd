@@ -2,7 +2,7 @@
 % Please edit documentation in R/score_calculator.R
 \name{get_scores}
 \alias{get_scores}
-\title{Calculate percentiles and z-scores}
+\title{Calculate IDEFICS Scores for Children}
 \usage{
 get_scores(
   variable = "waist",
@@ -14,29 +14,40 @@ get_scores(
 )
 }
 \arguments{
-\item{variable}{Either 'waist', 'sbp', 'dbp', 'trg', 'hdl' and 'homa',
-'bmi', 'glu', 'height' or 'insu'.}
+\item{variable}{Character. The variable to assess. Must be one of the supported variables ("waist", "bmi", "hdl", "sbp", "dbp", "trg", "homa", "glu", "height" or "insu").}
 
-\item{sex}{A vector of characters 'f' and 'm'.}
+\item{sex}{Character vector. Same length as `age`, `height`, and `values`. Accepts "f" for female or "m" for male.}
 
-\item{age}{A numeric vector.}
+\item{age}{Numeric vector. Ages of the children in years.}
 
-\item{height}{A numeric vector.}
+\item{height}{Numeric vector or NULL. Required for height-dependent models (`sbp` and `dbp`). Defaults to NULL.}
 
-\item{values}{A numeric vector with values for the parameter given in `variable`.}
+\item{values}{Numeric vector. Observed values of the variable to score.}
 
-\item{return_values}{A character vector with the possible values 'percentile' and 'z.score'.}
+\item{return_values}{Character vector. Specifies which outputs to return. Options include "percentile", "z.score".}
 }
 \value{
-A A list with the values specified in `return_values`
+A named list containing the requested scores. Each element is a numeric vector of the same length as `values`.
 }
 \description{
-The function calculates the percentiles and z-scores for given value of
-several clinical parameters ('waist', 'sbp', 'dbp', 'trg', 'hdl' and 'homa',
-'bmi', 'glu', 'height', 'insu')
-using the respective sex-specifc (and for some parameters height-specific)
-reference table.
+Computes age-, sex- and (for `sbp` and `dbp`) height-specific percentiles or z-scores for anthropometric and metabolic variables
+using IDEFICS study reference data.
 }
 \examples{
-get_scores(variable="dbp", sex=c("f","m"), age=c(5,5), height=c(120,110), values=c(70,60))
+get_scores(
+  variable = "waist",
+  sex = "f",
+  age = c(5, 6),
+  values = c(50, 52),
+  return_values = "z.score"
+)
+
+get_scores(
+  variable="dbp",
+  sex=c("f","m"),
+  age=c(5,5),
+  height=c(120,110),
+  values=c(70,60)
+)
+
 }

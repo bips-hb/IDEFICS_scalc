@@ -1,17 +1,22 @@
-Package: scorecalc
+Package: IDEFICS.scalc
 Type: Package
-Title: What the Package Does (Title Case)
+Title: Scoring Tools for Anthropometric and Metabolic Parameters in Children
 Version: 0.1.0
 Authors@R: c(
     person(
-      "Jane", "Doe",
-      email = "jane@example.com",
+      "Andreas", "Mändle",
+      email = "maendle@leibniz-bips.de",
       role = c("aut", "cre")
     )
   )
-Description: More about what it does (maybe more than one line).
-    Continuation lines should be indented.
-License: What license is it under?
+Description: Provides tools to compute standardized percentiles and z-scores for anthropometric
+    and metabolic parameters in children, based on age-, sex-, and height-specific reference data
+    from the IDEFICS study. Supports computation of a composite Metabolic Syndrome (MetS) score
+    and associated action levels for child health monitoring.
+License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
+Imports:
+    gamlss.dist,
+    pracma
 RoxygenNote: 7.3.2
