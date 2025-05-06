@@ -13,7 +13,7 @@ Description: Provides tools to compute standardized percentiles and z-scores for
     and metabolic parameters in children, based on age-, sex-, and height-specific reference data
     from the IDEFICS study. Supports computation of a composite Metabolic Syndrome (MetS) score
     and associated action levels for child health monitoring.
-License: MIT + file LICENSE
+License: GPL-3
 Encoding: UTF-8
 LazyData: true
 Imports:
