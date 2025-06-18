@@ -51,7 +51,7 @@ print(results)
 
 This package uses internal parameter tables based on the **IDEFICS study**, a European cohort focused on childhood obesity and metabolic health:
 
--  Ahrens, W., Moreno, L. A., Mårild, S., Molnár, D., Siani, A., De Henauw, S., Böhmann, J., Günther, K., Hadjigeorgiou, C., Iacoviello, L., Lissner, L., Veidebaum, T., Pohlabeln, H. & Pigeot, I. on behalf of the IDEFICS consortium (2014). [Metabolic syndrome in young children: definitions and results of the IDEFICS study.](https://doi.org/10.1038/ijo.2014.130). *International Journal of Obesity*, 38 (Suppl 2), S4–S14.
+-  Ahrens, W., Moreno, L. A., Mårild, S., Molnár, D., Siani, A., De Henauw, S., Böhmann, J., Günther, K., Hadjigeorgiou, C., Iacoviello, L., Lissner, L., Veidebaum, T., Pohlabeln, H. & Pigeot, I. on behalf of the IDEFICS consortium (2014). [Metabolic syndrome in young children: definitions and results of the IDEFICS study.](https://doi.org/10.1038/ijo.2014.130) *International Journal of Obesity*, 38 (Suppl 2), S4–S14.
 
 The reference data used in this package was originally published in:
 - [bips-hb/IDEFICS-Score_Calculator](https://github.com/bips-hb/IDEFICS-Score_Calculator/) — a repository containing the IDEFICS tables and an R script version of the scoring logic.
