@@ -5,14 +5,14 @@
 
 ## 🔧 Installation
 
-You can install the development version of `IDEFICS.scalc` from GitHub using:
+You can install the development version of `IDEFICS_scalc` from GitHub using:
 
 ```r
 # Install devtools if not already installed
 install.packages("devtools")
 
 # Install directly from GitHub
-devtools::install_github("bips-hb/IDEFICS.scalc")
+devtools::install_github("bips-hb/IDEFICS_scalc")
 ```
 
 ## 🚀 Example
